@@ -19,9 +19,13 @@
     justify-content: space-between;
 }
 
+.search,
+.search-result {
+    width: 361px;
+}
+
 .search {
     position: relative;
-    width: 361px;
     height: var(--search-height);
     padding-left: 16px;
     display: flex;
@@ -34,10 +38,11 @@
         height: 100%;
         color: var(--black);
         font-size: 1.6rem;
-        caret-color: var(--primary);
-        background-color: transparent;
+        caret-color: var(--primary); //màu dấu nháy
+        background-color: transparent; //Bg trong suốt
     }
 
+    //Làm cho button chứa icon kính loop đổi màu sau khi thẻ input đã có chữ
     input:not(:placeholder-shown) ~ .search-btn {
         color: var(--black);
     }
@@ -55,6 +60,13 @@
     &:focus-within {
         border-color: rgba(22, 24, 35, 0.3);
     }
+}
+
+.search-title {
+    padding: 5px 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
 }
 
 .clear,
