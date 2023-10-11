@@ -27,6 +27,12 @@
     margin-left: 8px;
 }
 
+.icon {
+    display: inline-block; //Hiển thjij icon 1 khối mới có thể chỉnh size hay mọi thứ cần thiêt
+    width: 20px;
+    text-align: left; // căn chỉnh giữa
+}
+
 // Button types
 .rounded {
     border-radius: 999px;
